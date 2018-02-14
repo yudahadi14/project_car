@@ -1,0 +1,34 @@
+Please follow the below instruction
+##########################################################################################################################################################################
+A) Installation - top
+After you downloaded the Project from Cloud, please upload all the files & folder from Project Folder to your Server Directory.
+After you uploaded, please type your domain name/install (Example : http://www.abc.com/install/) from your browser
+After that, you just need to fill in your Database Host Name, Database Username, Database Password and Database Name
+After fill up all the information, Click Next to finish the installation.
+After installation done, Please create .htaccess file inside your Server Directory and paste the following code.
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+Final Step : To change your website URL, open Application -> config Folder -> config.php
+Please find $config['base_url'] = 'http://.......' at Line Number : 26 and typed your website URL inside the single quote.
+
+Ready to go.
+Hope you enjoy it!
+
+If you are having any difficulty to installation, We encourage you to contact us. Email us at support@project.rafeldo.id for fast response. We will be glad to help you.
+
+##########################################################################################################################################################################
+Admin (Owner) Login
+Username : owner@gmail.com
+Password : password
+
+Service Advisor
+Username : advisor@gmail.com
+Password : password
+
+Technician
+Username : technician@gmail.com
+Password : password
+##########################################################################################################################################################################
